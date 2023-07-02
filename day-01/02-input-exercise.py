@@ -6,3 +6,4 @@ print("Number of characters present in your name is " +
 name = input("What is your name? ")
 length = len(name)
 print(f"Number of characters present in your name is {length}")
+
