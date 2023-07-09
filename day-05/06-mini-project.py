@@ -19,5 +19,6 @@ for _ in range(1, nr_symbols+1):
 for _ in range(1, nr_symbols+1):
     password += random.choice(symbols)
 
+# Random sample is used to shuffle a list and joining to for back a string 
 password = "".join(random.sample(password, len(password)))
 print("Your password is {0}".format(password))
