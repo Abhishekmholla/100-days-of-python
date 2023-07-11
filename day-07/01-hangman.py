@@ -12,7 +12,7 @@ print('''
                     __/ |                      
                    |___/''')
 
-hangman_ascii = [['''
+hangman_ascii = ['''
   +---+
   |   |
       |
@@ -61,7 +61,7 @@ hangman_ascii = [['''
  /|\  |
  / \  |
       |
-=========''']]
+=========''']
 
 lives = 6
 random_words = '''Hello bobby This is Abhishek'''
@@ -81,14 +81,15 @@ while lives != 0:
     new_word = []
     if user_input in word_selected:
         print("That's right!!! I can see the letter in the word")
-
         for letter in word_selected:
-            if user_input != letter:
+            if user_input != letter and letter not in new_word:
                 new_word.append('_')
                 continue
-            
             new_word.append(letter)
 
-        print("\t".join(new_word))
-
+        print("\n"+"\t".join(new_word))
+    else:
+        print("Bad choice!! I cannot see the letter in the word")
+        print(hangman_ascii[abs(lives - 6)])
+        lives-= 1
         
