@@ -1,5 +1,4 @@
 import random
-import os
 from hangman_dependencies.hangman_art import logo,hangman_ascii
 from hangman_dependencies.hangman_words import word_list
 
@@ -23,7 +22,6 @@ new_word = ("_\t"*len(word_selected)).strip('\t').split('\t')
 while lives != 0:
     user_input = input("\nGuess a letter: ").lower()
 
-    os.system('cls')
     # If the user input is invalid, throw error
     if len(user_input) == 0 or len(user_input) > 1:
         print("Please enter some valid letter to proceed with the game")
