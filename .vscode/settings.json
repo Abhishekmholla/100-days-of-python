@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./day-07/hangman/hangman_dependencies"
+    ]
+}
