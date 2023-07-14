@@ -7,10 +7,16 @@ while not is_end:
     direction,text,shift = caesar_cipher_input()
     enc_text = ""
 
+    if not (direction == "encode" or direction == "decode"):
+        print("Invalid input. Please provide a valid direction")
+        continue
+    
     if shift < 0:
         print("Invalid input. Please provide a valid number")
-        exit()
-        
+        continue
+    
+    shift = shift % 26 
+    
     if direction.lower() == "encode":
         enc_text = encrypt(text,shift)
         print(f"Here is your encoded result: {enc_text}")
