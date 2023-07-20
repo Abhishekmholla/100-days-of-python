@@ -2,14 +2,26 @@ import random
 from higher_lower_art import logo, vs
 from higher_lower_data import data
 
+SCORE = 0
+
 def validate_user_choice(user_choice):
     if user_choice not in ['a','b']:
         return False
     
     return True
 
+def calculate_result(user_choice, compare_item_one,compare_item_two):
+    if (user_choice == 'a' and (compare_item_one['follower_count'] >= compare_item_two['follower_count'])) or (user_choice == 'b' and (compare_item_one['follower_count'] <= compare_item_two['follower_count'])):
+        global SCORE 
+        SCORE +=1
+        print(f"Your score is {SCORE}")
+        return True
+  
+    print(f"Your score is: {SCORE}")
+    print("You lose!! Thanks for playing")
+    return False
+        
 print(logo)
-score = 0
 is_end = False
 
 while not is_end:
@@ -33,12 +45,7 @@ while not is_end:
         print("Invalid input. Please provide a valid input!!")
         continue
     
-    if (user_choice == 'a' and (compare_item_one['follower_count'] >= compare_item_two['follower_count'])) or (user_choice == 'b' and (compare_item_one['follower_count'] <= compare_item_two['follower_count'])):
-        score +=1
-        print(f"Your score is {score}")
+    if calculate_result(user_choice,compare_item_one,compare_item_two):
         continue
-    else:
-        print(f"Your score is: {score}")
-        print("You lose!! Thanks for playing")
         
     is_end = True
