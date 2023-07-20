@@ -49,7 +49,7 @@ while not is_end:
     print(vs)
 
     print(
-        f"\Against B: {compare_item_two['name']},a {compare_item_two['description']}, from {compare_item_two['country']}\n")
+        f"Against B: {compare_item_two['name']},a {compare_item_two['description']}, from {compare_item_two['country']}\n")
 
     user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
 
@@ -58,10 +58,10 @@ while not is_end:
         continue
 
     if calculate_result(user_choice, compare_item_one, compare_item_two):
+        os.system('cls')
         score +=1
         print(f"Your score is {score}")
         compare_item_one = compare_item_two
-        os.system('cls')
         continue
 
     is_end = True
