@@ -23,11 +23,13 @@ def calculate_result(user_choice, compare_item_one, compare_item_two,):
     print("You lose!! Thanks for playing")
     return False
 
+
 def check_if_same_item_selected(compare_item_one, compare_item_two):
     if compare_item_one == compare_item_two:
         return True
-    
+
     return False
+
 
 print(logo)
 
@@ -39,7 +41,7 @@ if check_if_same_item_selected(compare_item_one, compare_item_two):
 
 while not is_end:
     compare_item_two = random.choice(data)
-    
+
     if check_if_same_item_selected(compare_item_one, compare_item_two):
         compare_item_two = random.choice(data)
 
@@ -59,7 +61,7 @@ while not is_end:
 
     if calculate_result(user_choice, compare_item_one, compare_item_two):
         os.system('cls')
-        score +=1
+        score += 1
         print(f"Your score is {score}")
         compare_item_one = compare_item_two
         continue
