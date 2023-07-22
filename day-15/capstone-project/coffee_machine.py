@@ -88,9 +88,9 @@ is_end = False
 while not is_end:
     total_money = 0
     user_option = input("Here is the list of options for you\n" +
-                        "1) Espresso\n"
-                        + "2) Latte\n"
-                        + "3) Cappuccino\n"
+                        f"1) Espresso     -> ${menu['espresso'][COST]}\n"
+                        + f"2) Latte        -> ${menu['latte'][COST]}\n"
+                        + f"3) Cappuccino   -> ${menu['cappuccino'][COST]}\n"
                         + "4) Report\n"
                         + "5) Off\n"
     +"Please chose any of the options: ")
@@ -98,10 +98,11 @@ while not is_end:
         continue
     
     if user_option not in ['4','5']:
+        print("Please insert coins.")
         for coin_type, coin_value in COINS.items():
             
             try:  
-                coin_input = input(f"How many {coin_type} do you want to put. Please enter a whole number?")
+                coin_input = input(f"How many {coin_type}. Please enter a whole number? ")
             except:
                 print("Please provide a valid coin value.")
                 continue
