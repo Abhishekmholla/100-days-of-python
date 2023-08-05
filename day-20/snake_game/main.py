@@ -29,7 +29,12 @@ def create_snake_tail(length_required = 1):
         
     return snake
 
+def move_snake_forward():
+    for snake_num  in range(len(snake_body) - 1 ,0,-1):
+        snake_body[snake_num].goto(snake_body[snake_num -1].xcor(), snake_body[snake_num -1].ycor())
 
+    snake_body[0].forward(20)
+        
 # create_screen()
 
 snake = create_snake_tail(length_required=3)
