@@ -11,4 +11,8 @@ class screen:
         self.screen.title("Snake Game")
         self.screen.tracer(0)
     
- 
+    def update_screen(self):
+        self.screen.update()
+    
+    def exit_screen(self):
+        self.screen.exitonclick()
