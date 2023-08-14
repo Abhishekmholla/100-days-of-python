@@ -1,4 +1,5 @@
 from turtle import Screen
+from snake import snake
 
 class screen:
     
@@ -16,3 +17,8 @@ class screen:
     
     def exit_screen(self):
         self.screen.exitonclick()
+        
+    def listen_screen(self):
+        self.screen.listen()
+    
+   
