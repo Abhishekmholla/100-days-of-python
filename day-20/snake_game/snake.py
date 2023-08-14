@@ -27,3 +27,12 @@ class snake:
                 self.snake_body[snake_num - 1].xcor(), self.snake_body[snake_num - 1].ycor())
 
         self.snake_body[0].forward(20)
+
+    def change_direction(self, key):
+        if key == "d":
+            for snake_num in range(len(self.snake_body) - 1, 0, -1):
+                self.snake_body[snake_num].goto(
+                    self.snake_body[snake_num - 1].xcor()-90, self.snake_body[snake_num - 1].ycor())
+        
+    
+    
