@@ -21,4 +21,6 @@ class screen:
     def listen_screen(self):
         self.screen.listen()
     
-   
+    def screen_keypress(self, snake: snake , key):
+        if key == "d":
+            self.screen.onkey(snake.change_direction(key),key)
