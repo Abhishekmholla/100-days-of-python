@@ -26,6 +26,7 @@ while not is_end:
     add_bidders(bidders)
     any_other_bidder = input("Are there any other bidders? Type 'yes' or 'no': ").lower()
     
+    # If the user enters anything which is not yes or no then throw error
     if any_other_bidder not in ['yes','no']:
         print("Invalid input. Please provide a valid input")
         continue
