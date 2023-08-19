@@ -13,6 +13,7 @@ while not is_end:
         print("Invalid input. Please provide a valid direction")
         continue
     
+    # If the shift requested us less than zero then throw error
     if shift < 0:
         print("Invalid input. Please provide a valid number")
         continue
