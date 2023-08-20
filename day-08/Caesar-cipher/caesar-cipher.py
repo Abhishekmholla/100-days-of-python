@@ -7,6 +7,8 @@ while not is_end:
     direction,text,shift = caesar_cipher_input()
     enc_text = ""
 
+    # If the direction is not encode or decode then printing an 
+    # error message
     if not (direction == "encode" or direction == "decode"):
         print("Invalid input. Please provide a valid direction")
         continue
