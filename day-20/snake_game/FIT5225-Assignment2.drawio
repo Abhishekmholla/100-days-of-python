@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-18T19:14:03.924Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="C3JIMReQKcqj3lTQrZFU" version="24.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-18T19:14:33.860Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="7rs7B-kleCIxDaHbLkxe" version="24.4.4" type="github">
   <diagram name="Page-1" id="XCapX623ZK9VIntV2yf6">
     <mxGraphModel dx="1434" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -318,7 +318,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VPLvg2K2wHVccdFYRHNz-138" value="&lt;sub&gt;&lt;b&gt;Compare lambda&lt;br&gt;&lt;/b&gt;&lt;/sub&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="698" y="728" width="82" height="42" as="geometry" />
+          <mxGeometry x="740" y="750" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VPLvg2K2wHVccdFYRHNz-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="y3648cTaK8qfpZ_CPwrZ-71" target="VPLvg2K2wHVccdFYRHNz-133">
           <mxGeometry relative="1" as="geometry">
@@ -416,14 +416,6 @@
         <mxCell id="VPLvg2K2wHVccdFYRHNz-200" value="&lt;b&gt;&lt;sub&gt;IAM Policy&lt;br&gt;&lt;/sub&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1216" y="294.5" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VPLvg2K2wHVccdFYRHNz-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VPLvg2K2wHVccdFYRHNz-201" target="VPLvg2K2wHVccdFYRHNz-133">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1180" y="780" />
-              <mxPoint x="809" y="780" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="VPLvg2K2wHVccdFYRHNz-201" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1060" y="240" width="240" height="94.5" as="geometry" />
         </mxCell>
@@ -439,6 +431,14 @@
         </mxCell>
         <mxCell id="VPLvg2K2wHVccdFYRHNz-204" value="&lt;b&gt;&lt;sub&gt;Configuring the lambda&#39;s execution role&lt;/sub&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="849" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VPLvg2K2wHVccdFYRHNz-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.617;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VPLvg2K2wHVccdFYRHNz-133" target="VPLvg2K2wHVccdFYRHNz-201">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="809" y="780" />
+              <mxPoint x="1208" y="780" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
